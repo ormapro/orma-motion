@@ -107,6 +107,16 @@ Referensi dari luar dan alat AI belum di-approve untuk disalin, diinstal, dijual
 
 **Existing owner approval gate:** Tahap C code implementation, dependency installation, API berbayar dan publikasi produk tetap menunggu persetujuan spesifik. Dokumentasi saja diizinkan untuk mencegah kehilangan konteks.
 
+## 7B. Owner memilih pilot pertama: IKLAN PRODUK DIGITAL via ChatGPT Work (06 Nov)
+
+**Perubahan urutan terpilih:** pilot personal pertama adalah **video iklan untuk produk digital milik Owner secara utuh**, bukan hook terisolasi. Setelah video utuh terbukti usable baru eksplorasi hook tersendiri, B-roll dan YouTube. Product name/fitur/benefit/offer/CTA dan footage yang akan digunakan belum dipilih atau diserahkan dalam turn ini; jangan mengarang klaim atau aset.
+
+**Target durasi untuk pilot ini:** kira-kira **30–40 detik**, fleksibel lebih pendek/panjang jika kebutuhan storytelling dan demonstrasi produk mengharuskan; 60 detik hanyalah alternatif yang boleh direkomendasikan dengan alasan isi/tempo, bukan default atau format wajib. Rasio, resolusi, VO dan platform mengikuti creative brief. Video iklan dirancang berisi opening hook, masalah/relevansi, pengenalan & demonstrasi manfaat produk, trust/proof hanya bila tersedia, dan CTA yang sesuai; optimalkan visual storytelling (UI demo, kinetic typography, 2D/2.5D/3D, footage/B-roll) per scene.
+
+**Environment yang ingin diuji:** Owner berencana mulai dengan **ChatGPT Work, model GPT-6.1 Sol High** jika tersedia; tidak langsung Codex. Bandingkan Work + Astra pada effort yang sesuai, kemudian Codex hanya jika dibutuhkan; aset, brief, commit dan kriteria QA harus sama untuk evaluasi terkontrol. OpenAI menyatakan GPT-6 Astra sebagai model paling mampu untuk tugas kompleks, tetapi lebih boros allowance dan tak menjamin hasil visual lebih baik. Project instructions bekerja di ChatGPT Project untuk Work; Codex memakai instruksi repo/AGENTS.md, bukan mekanisme Project yang sama. Penggunaan Work/Codex dalam ChatGPT Project Member Area tidak mengubah status Orma Motion sebagai repo independen.
+
+**Status:** Trial belum dijalankan dan produk digital spesifik belum disebut. Ini keputusan prioritas/creative pilot, B Stage planning tetap aktif. Jangan menambahkan Project ChatGPT baru atau menjalankan paid API/implementasi engine tanpa izin pekerjaan yang sesuai.
+
 ## 8. NEXT untuk chat pengembangan berikutnya
 
 1. Baca dokumen ini dan canonical coordination handoff pada repo member-area, lalu periksa HEAD main terbaru dan perubahan aktual sebelum memulai.
