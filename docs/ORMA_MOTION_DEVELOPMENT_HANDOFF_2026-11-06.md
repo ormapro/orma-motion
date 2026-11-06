@@ -93,6 +93,20 @@ Referensi dari luar dan alat AI belum di-approve untuk disalin, diinstal, dijual
 - **D — Produk nyata:** Edukasi transportasi/tol Jawa, Signalof digital product ad, Elbrush hybrid footage — semua masih kandidat uji, bukan hasil.
 - **E — Packaging komersial:** AI Skill / toolkit / ChatGPT Project / aplikasi mandiri BELUM diputuskan. Legal/license/commercial QA wajib.
 
+## 7A. Cross-chat learning 06 Nov — empat level visual dan prioritas personal-first
+
+**Rekonsiliasi diskusi pada ChatGPT Project lain:** Istilah Level 1–4 ditemukan sebagai **usulan assistant**, BUKAN taxonomy yang telah di-ACC final oleh Owner. Rincian usulannya: (1) motion 2D sederhana: tipografi, grafik/peta/ilustrasi; (2) motion 2.5D: layer, parallax, depth/camera; (3) character & scene animation: orang sederhana melakukan aksi di scene bercerita; (4) motion 3D/scientific visualization: objek 3D, simulasi mekanisme/cutaway. **Level bukan ranking kualitas dan satu video tidak dikunci pada satu level.** Shot bisa memakai berbagai level sesuai tujuan; footage live-action, stock video, user clips, AI B-roll dan overlays bisa dicampur lintas level. Semua istilah perlu diverifikasi lewat contoh, tidak boleh dipaksakan sebagai pipeline wajib.
+
+**Teknologi yang pernah didiskusikan:** Remotion diperhitungkan sebagai kandidat modul editing/timeline/compositing dan render, *bukan* pengganti wajib Bang Motion atau jaminan visual lebih baik. GSAP/HTML/SVG/Three.js/Blender dan asset footage merupakan pilihan berdasarkan kebutuhan shot, runtime dan lisensi.
+
+**Owner prioritization (06 Nov):** Kerjakan dulu **versi pribadi** agar bisa langsung dipakai sambil mempelajari kelemahan dan memperbaikinya. Use cases nyata: hook video iklan produk, product B-roll/hybrid footage, demo/visual produk digital, edukasi YouTube Shorts/long-form, serta motion info/YouTube channel pribadi. Keputusan calon produk jualan ditunda hingga prototipe personal benar-benar terbukti bagus dan workable. Owner menyebut waktu eksplorasi awal sekitar satu hari sebagai keinginan kerja intensif, **bukan janji delivery**.
+
+**Style Book v0 versus “otak” terpisah:** Model inti sekarang cukup untuk memulai *proof-of-use* terarah setelah persetujuan owner terhadap batch kode. Tidak perlu membuat ChatGPT Project baru sekarang (Owner eksplisit: jangan dulu). Simpan style knowledge, prompt decisions, lessons, reference URLs dan hasil eksperimen dalam repo motion; Member Area repo menyimpan pointer/handover. Jangan mencoba menciptakan katalog lengkap sebelum produksi pertama. Style Book dan Visual Director akan disempurnakan secara iteratif setelah tiap contoh nyata, bukan mengunci engine ke sejumlah template.
+
+**Urutan personal pilot yang diusulkan (belum implementasi):** (a) satu hook iklan pendek dari brief produk nyata, (b) satu hybrid B-roll/footage + motion graphic, (c) satu educational explainer untuk YouTube / scene karakter atau diagram; pilih format dan audio sesuai masing-masing brief. Setiap pilot mencatat tujuan, style bible per-video, daftar shot/teknik level, komponen yang dipakai, hasil MP4, revisi, visual QA, waktu dan penggunaan biaya. Jangan menghabiskan semua waktu untuk banyak scene sebelum menyelesaikan satu output end-to-end.
+
+**Existing owner approval gate:** Tahap C code implementation, dependency installation, API berbayar dan publikasi produk tetap menunggu persetujuan spesifik. Dokumentasi saja diizinkan untuk mencegah kehilangan konteks.
+
 ## 8. NEXT untuk chat pengembangan berikutnya
 
 1. Baca dokumen ini dan canonical coordination handoff pada repo member-area, lalu periksa HEAD main terbaru dan perubahan aktual sebelum memulai.
