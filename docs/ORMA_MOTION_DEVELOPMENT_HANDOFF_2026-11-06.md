@@ -1,5 +1,9 @@
 # ORMA MOTION — Technical Development Handoff & Reference Register
 
+## Update 10 Nov 2026 — standar asset/character-first
+
+**Arahan produksi Owner yang lebih baru daripada snapshot 06 Nov:** untuk iklan yang memakai karakter, baca [Character-first & asset-first layered animation](ORMA_MOTION_CHARACTER_FIRST_WORKFLOW.md) dan [AGENTS.md](../AGENTS.md) **sebelum** membuat storyboard, aset, atau motion test. Seluruh video harus dipecah menjadi kebutuhan cast/pose/expression/set/props/UI; aset harus dibuat masing-masing, bukan memotong karakter dari satu gambar jadi/storyboard. Gunakan rig/sprite, panggung multiplane, animasi properti dan GSAP timeline sebagai pekerjaan nyata. Pendekatan realistis 2.5D kandidat yang akan diuji lintas produk, bukan ketetapan universal. Motion test VISIBEL terdahulu dengan cutout dari foto komposit **ditolak Owner**; jangan jadikan referensi berhasil. Dokumen ini adalah *process standard*; bukan bukti implementasi character generation atau upgrade runtime. Owner sedang mempertimbangkan agar instruksi/pengembangan Orma Motion dicatat langsung di repo ini untuk mengurangi langkah; perubahan routing ChatGPT Project saat ini belum dikonfirmasi.
+
 **Tanggal:** 06 November 2026 WIB
 **Status:** Tahap A audit statis selesai; Tahap B visual research / arsitektur konsep AKTIF, BELUM DI-ACC final; Tahap C implementasi BELUM DIMULAI.
 **Repository source:** https://github.com/ormapro/orma-motion (main)
