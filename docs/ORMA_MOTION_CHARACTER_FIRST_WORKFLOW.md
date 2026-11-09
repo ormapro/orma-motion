@@ -4,7 +4,7 @@
 
 **Keputusan format video (10 Nov 2026): FPS final minimum 30.** Gunakan **30 fps sebagai default** jika brief tidak menentukan angka lebih tinggi; 60 fps atau lebih boleh sesuai kebutuhan, biaya render dan target platform. **Jangan membuat/menyerahkan final 24 fps atau 25 fps**. Semua animasi baru, timeline, jumlah frame render dan mux/metadata final harus konsisten pada FPS >= 30. Bukan sekadar mengganti metadata 24 fps menjadi 30 fps. Video sumber dengan frame rate lebih rendah harus ditangani pada timeline final >=30 fps sesuai metode yang relevan; laporkan batas mulusnya, dan jangan mengklaim sumber 24 fps tiba-tiba menjadi gerak 30 fps asli. QA lewat `ffprobe` (FPS yang terdekode), pemeriksaan jumlah frame dan pemutaran sebenarnya. Sampel audio 24 kHz **bukan** video 24 fps.
 
-**Istilah resmi:** **Character Asset Sheet** (lembar kebutuhan dan spesifikasi karakter) serta **Set & Prop Inventory**. Jangan gunakan istilah lama `Character Bible`, `Cast Bible`, atau `Set & Prop Bible` dalam instruksi produksi baru.
+**Istilah resmi:** **Character Asset Sheet** (lembar kebutuhan dan spesifikasi karakter) serta **Set & Prop Inventory**. Gunakan kedua nama ini secara konsisten dalam instruksi dan dokumen produksi baru.
 
 
 ## 1. Masalah yang harus dihindari
