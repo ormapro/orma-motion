@@ -2,6 +2,11 @@
 
 **Status:** standar **perencanaan dan produksi** yang diminta Owner, 10 November 2026. Berlaku sebagai pedoman kerja lintas proyek di repository Orma Motion; **bukan klaim fitur auto-generator yang sudah terimplementasi**. Gunakan bersama `SKILL.md`, `references/anti-ppt.md`, `references/architecture.md`, dan, bila ada karakter ber-rig, `references/kartun-panggung.md`.
 
+**Keputusan format video (10 Nov 2026): FPS final minimum 30.** Gunakan **30 fps sebagai default** jika brief tidak menentukan angka lebih tinggi; 60 fps atau lebih boleh sesuai kebutuhan, biaya render dan target platform. **Jangan membuat/menyerahkan final 24 fps atau 25 fps**. Semua animasi baru, timeline, jumlah frame render dan mux/metadata final harus konsisten pada FPS >= 30. Bukan sekadar mengganti metadata 24 fps menjadi 30 fps. Video sumber dengan frame rate lebih rendah harus ditangani pada timeline final >=30 fps sesuai metode yang relevan; laporkan batas mulusnya, dan jangan mengklaim sumber 24 fps tiba-tiba menjadi gerak 30 fps asli. QA lewat `ffprobe` (FPS yang terdekode), pemeriksaan jumlah frame dan pemutaran sebenarnya. Sampel audio 24 kHz **bukan** video 24 fps.
+
+**Istilah resmi:** **Character Asset Sheet** (lembar kebutuhan dan spesifikasi karakter) serta **Set & Prop Inventory**. Jangan gunakan istilah lama `Character Bible`, `Cast Bible`, atau `Set & Prop Bible` dalam instruksi produksi baru.
+
+
 ## 1. Masalah yang harus dihindari
 
 Kegagalan nyata pada VISIBEL: dari satu foto/storyboard komposit dibuat mask karakter/latar/properti, lalu hasil potongannya digerakkan dengan zoom, pan, dan bubble di atas VO. Secara teknis bisa menghasilkan MP4, **tetapi itu bukan karakter animasi yang dirancang**; Owner menolaknya. Hasil yang punya parallax saja belum tentu mengandung akting/gerak yang bermakna.
@@ -25,8 +30,8 @@ Visual dapat realistis, semi-realistis, ilustratif atau kartun sesuai produk. **
 
 1. **Brief + verifikasi materi.** Baca VO yang disediakan, semua HTML/produk asli dan constraint iklan; ukur audio asli. Jangan mengganti isi VO. Uraikan seluruh durasi (bukan 12 detik pertama saja), alur sebab-akibat dan CTA.
 2. **Full-video motion blueprint.** Pecah seluruh naskah menjadi beat yang punya tindakan. Untuk SETIAP beat, tentukan: siapa/apa yang muncul, lokasi, perubahan keadaan, interaksi, kamera, transisi, waktu, dan teknik (sprite swap, joint rig, UI animation, prop animation, footage, dll.). Kalimat VO **tidak harus** setara satu scene; sebuah panggung bisa memuat beberapa beat.
-3. **CAST BIBLE seluruh film.** Daftarkan semua pemeran utama dan pendukung yang benar-benar diperlukan, karakter-ID konsisten, visual identitas, wardrobe, postur, prop yang dipegang, perspektif, arah tubuh (front / 3/4 left / 3/4 right / side bila relevan), dan perubahan emosi/aksi sepanjang film. Rencanakan **pose/action/expression matrix** dari seluruh beat sebelum asset generation pertama.
-4. **SET & PROP BIBLE seluruh film.** Daftar semua background tiap lokasi **tanpa karakter tertanam**, objek midground/foreground, properti interaktif, dan state (laptop terbuka/tertutup, surat dibuka, dokumen menumpuk, UI berpindah halaman). Tentukan skala, titik jangkar dan occlusion.
+3. **CHARACTER ASSET SHEET seluruh film.** Daftarkan semua pemeran utama dan pendukung yang benar-benar diperlukan, karakter-ID konsisten, visual identitas, wardrobe, postur, prop yang dipegang, perspektif, arah tubuh (front / 3/4 left / 3/4 right / side bila relevan), dan perubahan emosi/aksi sepanjang film. Rencanakan **pose/action/expression matrix** dari seluruh beat sebelum asset generation pertama.
+4. **SET & PROP INVENTORY seluruh film.** Daftar semua background tiap lokasi **tanpa karakter tertanam**, objek midground/foreground, properti interaktif, dan state (laptop terbuka/tertutup, surat dibuka, dokumen menumpuk, UI berpindah halaman). Tentukan skala, titik jangkar dan occlusion.
 5. **ASSET MANIFEST dan dependency graph.** Satu ID untuk tiap aset/revisi. Petakan asset -> beat/scene; mana dipakai ulang, mana perlu versi pose/angle, dan apa yang boleh dibangun dari SVG. **Perencanaan kebutuhan untuk 100% video harus lengkap sebelum menguji gerak.**
 6. **Buat aset aslinya secara terpisah.** Buat master karakter/sprite/rig, termasuk pose dan ekspresi yang diperlukan; buat background, props, pemeran lain, UI/source captures secara mandiri. Atlas PNG alpha atau SVG rig bukan keharusan mutlak: format dipilih dari jenis aksi. Jangan menghasilkan satu poster lalu mengirisnya. Periksa identitas antarpose, alpha, anatomi, pertemuan tangan-prop, pivot, arah cahaya dan perspektif.
 7. **Bangun panggung dan satu master timeline** di engine Orma Motion (HTML/CSS/SVG/GSAP, Three.js hanya bila perlu). Sambungkan layer asli, pergerakan pose/rig dan props, kamera, UI, VO, SFX. Kamera jangan menjadi satu-satunya yang bergerak.
@@ -116,7 +121,7 @@ Sebelum uji ulang, **audit keseluruhan naskah** lalu tentukan minimal kategori k
 - UI VISIBEL asli (The Visibility Framework, Situational Playbook, 30-Day Action Map) sebagai sumber interaksi, **bukan dashboard yang direka**;
 - overlay grafis dan CTA tanpa harga; VO asli tidak diubah.
 
-Urutan yang disarankan: full breakdown VO -> asset/cast bible & storyboard aksi bila perlu -> bangun sprite/rig dan set mandiri -> validasi kontinuitas -> motion proof -> video penuh setelah persetujuan.
+Urutan yang disarankan: full breakdown VO -> Character Asset Sheet, Set/Prop Inventory & storyboard aksi bila perlu -> bangun sprite/rig dan set mandiri -> validasi kontinuitas -> motion proof -> video penuh setelah persetujuan.
 
 ## 7. QA yang wajib dilaporkan, jangan hanya menyatakan "sudah 2.5D"
 
