@@ -2,6 +2,9 @@
 
 ## Update 10 Nov 2026 — standar asset/character-first
 
+**Penyempurnaan Owner (10 Nov 2026):** semua video Orma Motion minimal **30 fps** (default 30; 60+ sesuai brief). Standardisasi hanya untuk batas bawah frame rate, bukan memaksakan format/durasi/rasio. Istilah karakter yang digunakan adalah **Character Asset Sheet**, dan daftar latar/properti adalah **Set & Prop Inventory**. Larangan memakai label lama berlaku untuk dokumen produksi baru. Semua standar ini bersifat prosedural; belum ada perubahan renderer/runtime otomatis.
+
+
 **Arahan produksi Owner yang lebih baru daripada snapshot 06 Nov:** untuk iklan yang memakai karakter, baca [Character-first & asset-first layered animation](ORMA_MOTION_CHARACTER_FIRST_WORKFLOW.md) dan [AGENTS.md](../AGENTS.md) **sebelum** membuat storyboard, aset, atau motion test. Seluruh video harus dipecah menjadi kebutuhan cast/pose/expression/set/props/UI; aset harus dibuat masing-masing, bukan memotong karakter dari satu gambar jadi/storyboard. Gunakan rig/sprite, panggung multiplane, animasi properti dan GSAP timeline sebagai pekerjaan nyata. Pendekatan realistis 2.5D kandidat yang akan diuji lintas produk, bukan ketetapan universal. Motion test VISIBEL terdahulu dengan cutout dari foto komposit **ditolak Owner**; jangan jadikan referensi berhasil. Dokumen ini adalah *process standard*; bukan bukti implementasi character generation atau upgrade runtime. Owner sedang mempertimbangkan agar instruksi/pengembangan Orma Motion dicatat langsung di repo ini untuk mengurangi langkah; perubahan routing ChatGPT Project saat ini belum dikonfirmasi.
 
 **Tanggal:** 06 November 2026 WIB
@@ -22,7 +25,7 @@ Repository ini adalah sumber teknis untuk engine, skill, references, visual stan
 
 Target jangka panjang: prompt sederhana -> pemahaman tujuan -> script/storyboard -> pemilihan visual -> asset/voice opsional -> timeline -> sound effect -> render MP4 -> QA/revisi. Dibutuhkan video edukasi, dokumenter/sejarah, YouTube/creator, iklan produk digital, serta iklan hybrid dari footage asli; tidak terbatas pada satu genre atau platform.
 
-**Tidak ada spesifikasi universal 30 detik/9:16/1080p/30fps.** Format, resolusi, durasi, rasio, subtitle, dan sumber VO mengikuti brief atau rekomendasi AI berdasarkan tujuan. 9:16 dan 30 detik umum untuk kebutuhan pribadi tetapi hanya contoh benchmark, bukan batas engine atau standar kualitas.
+**Standar video terbaru (Owner 10 Nov 2026): FPS output minimal 30, default 30 fps; 60 fps atau lebih sesuai kebutuhan. Final video 24/25 fps tidak diterima.** Durasi, rasio (mis. 9:16), resolusi, subtitle dan sumber VO tetap fleksibel berdasarkan brief; 30 detik tidak sama dengan 30 fps. Pernyataan historis bahwa 30fps bukan standar kini digantikan keputusan minimum ini. Target FPS harus berlaku untuk timeline, render frame dan encoding, lalu diverifikasi pada hasil aktual.
 
 Voiceover pilihan: rekaman pengguna, ElevenLabs/voice AI lain, atau tanpa narasi. Audio nyata bila ada menjadi acuan timing visual; jangan mengasumsikan durasi dari jumlah kata saja. Integrasi ElevenLabs bukan dependency wajib dan belum diuji secara end-to-end. Personal mode dan calon commercial mode menggunakan engine sama, mungkin berbeda alur interaksi; bentuk produk, harga, distribusi, dan UI komersial belum diputuskan.
 
@@ -37,7 +40,7 @@ Voiceover pilihan: rekaman pengguna, ElevenLabs/voice AI lain, atau tanpa narasi
 
 ## 4. Visual Director & Style Book — rancangan tahap B, belum ACC final
 
-Istilah kerja: **Orma Visual Director** (memilih cerita, adegan, teknik, aset dan kamera) dan **Orma Style Book** (catalog referensi dan prinsip lintas proyek). **Style Bible** adalah konsistensi spesifik setiap produksi; semua nama masih bisa berubah.
+Istilah kerja: **Orma Visual Director** (memilih cerita, adegan, teknik, aset dan kamera) dan **Orma Style Book** (catalog referensi dan prinsip lintas proyek). **Style Guide per produksi** adalah panduan konsistensi spesifik setiap produksi; semua nama masih bisa berubah.
 
 Pisahkan konsep: visual style (appearance), motion style (gerak objek/kamera), storytelling style (cara menjelaskan), art direction (konsistensi). Topik sejarah/sains/ekonomi bukan template tetap. Satu video boleh menggunakan karakter sederhana, 2D puppet, foto arsip, peta, diagram, footage, 3D simulation, kinetic typography dan UI. AI memilih teknik untuk tiap adegan serta menjaga keseluruhan tetap koheren. Pengguna kelak boleh memakai Auto Director (AI memilih), Guided (preferensi), Custom (prompt per adegan). Ini konsep, bukan fitur yang sudah dibuat.
 
