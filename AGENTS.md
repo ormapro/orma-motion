@@ -11,7 +11,10 @@ This repository (`ormapro/orma-motion`) holds the **technical engine, source, an
 
 ## Production non-negotiables
 
-- **Start from the entire voiceover/script**, not a short sample: whole-video beat sheet, full cast/character bible, pose–expression–action matrix, sets, props, UI, and reusable asset manifest must be defined **before** asset generation/motion proof.
+- **Start from the entire voiceover/script**, not a short sample: whole-video beat sheet, full Character Asset Sheet, pose–expression–action matrix, sets, props, UI, and reusable asset manifest must be defined **before** asset generation/motion proof.
+
+- **Mandatory output FPS >=30.** Default 30 fps unless the brief specifies more; 60 fps is valid. Never render or deliver a 24/25-fps finished ad. Set animation timeline, frame export, encoding and QA to the same target FPS. Do not merely relabel low-fps frames as 30 fps; verify with `ffprobe` and decoded-frame count. Audio at 24 kHz is unrelated to video 24 fps.
+- **Terminology:** use **Character Asset Sheet** and **Set & Prop Inventory**; do not use the old `Bible` label for production asset specifications.
 - **Character-first, not composite-crop-first:** make each reusable character as a separate sprite/rig system with its required views, emotions, and action poses; create independent backgrounds and props. **Do not cut a character out of a finished storyboard/image and move that one cutout as the entire animation**.
 - 2.5D means coherent layered worlds and action with independently controlled character states/objects; parallax or zoom alone is not enough. Use sprite/pose swaps or true joint rigs when necessary. Borrow joint rig techniques from `references/kartun-panggung.md` without inheriting its cartoon art style.
 - Use original product/UI materials, not invented screens. Keep each character consistent across scenes. Full storyboard remains a design reference, not an asset atlas.
