@@ -1,22 +1,19 @@
 {
-  "name": "bang-motion",
-  "displayName": "Bang Motion",
-  "version": "1.19.0",
-  "description": "Build motion graphics in the browser — product openers and promos, bumpers and idents, channel intros, kinetic typography, lower thirds, and five explainer styles — that move like video instead of reading like a slide deck. Output is a single index.html that autoplays and loops.",
+  "name": "orma-motion",
+  "displayName": "Orma Motion",
+  "version": "0.1.0",
+  "description": "Orma Motion — branded production skill built on Bang Motion v1.19.0, for storyboard, asset-first animation, and anti-slide QA.",
   "author": {
-    "name": "Bang Tutorial",
-    "url": "https://youtube.com/bangtutorial"
+    "name": "OrmaPro"
   },
-  "homepage": "https://github.com/bangtutorial/bang-motion",
-  "repository": "https://github.com/bangtutorial/bang-motion",
+  "homepage": "https://github.com/ormapro/orma-motion",
+  "repository": "https://github.com/ormapro/orma-motion",
   "license": "MIT",
   "keywords": [
     "motion-graphics",
     "explainer",
-    "opener",
-    "promo",
+    "storyboard",
     "animation",
-    "kinetic-typography",
     "gsap",
     "video"
   ]

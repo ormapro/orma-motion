@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "orma-motion",
+  "version": "0.1.0",
+  "description": "Orma Motion: storyboard, visual asset planning and browser motion-graphics production workflows, adapted from Bang Motion v1.19.0 (MIT).",
+  "author": {
+    "name": "OrmaPro"
+  },
+  "homepage": "https://github.com/ormapro/orma-motion",
+  "repository": "https://github.com/ormapro/orma-motion",
+  "license": "MIT",
+  "keywords": [
+    "motion-graphics",
+    "storyboard",
+    "video",
+    "gsap",
+    "explainer",
+    "creative-production"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Orma Motion",
+        "shortDescription": "Storyboard, aset, dan motion graphic yang tidak terasa seperti slide.",
+        "longDescription": "Panduan produksi Orma Motion untuk iklan, explainer, dan konten kreator: full-VO breakdown, character-first asset planning, motion design, visual QA, serta referensi dan starter Bang Motion.",
+        "developerName": "OrmaPro",
+        "category": "Creativity",
+        "brandColor": "#2146AD",
+        "composerIcon": "./assets/orma-motion-icon.png",
+        "logo": "./assets/orma-motion-icon.png",
+        "defaultPrompt": [
+          "Bantu rancang storyboard motion graphic dari voice-over ini.",
+          "Audit hasil animasi supaya tidak terasa seperti slideshow.",
+          "Susun Character Asset Sheet dan Set & Prop Inventory untuk iklan ini."
+        ]
+      }
+    }
+  }
+}

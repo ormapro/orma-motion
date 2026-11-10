@@ -1,5 +1,9 @@
 # ORMA MOTION — Agent entrypoint
 
+## Orma Motion Plugin package (10 Nov 2026)
+
+This repository now contains a **separate branded Orma Motion plugin**: root `plugin.json`, `skills/orma-motion/SKILL.md`, `assets/orma-motion-icon.svg` and `assets/orma-motion-icon.png`. For Orma production requests, load `skills/orma-motion/SKILL.md` **before** selecting the task-relevant upstream Bang Motion references and templates. The original Bang Motion root `SKILL.md`, its technique/reference files, gallery and starter HTML remain preserved as upstream resources; do not mistake their metadata for the Orma plugin's identity. For cross-chat project status, live GitHub context remains necessary when available.
+
 This repository (`ormapro/orma-motion`) holds the **technical engine, source, and production standards** for Orma Motion. It includes Bang Motion v1.19.0 under MIT; preserve attribution and licensing. The upstream `SKILL.md` and starter files are **not** proof that a new commercial workflow or renderer is already implemented.
 
 ## Read first for any production or engine task
